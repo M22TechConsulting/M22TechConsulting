@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record model="ir.ui.view" id="res_partner_view_change_vat">
+        <field name="name">res.partner.view.change.vat</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="replace">
+                <field name="vat" placeholder="e.g. BE0477472701"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
